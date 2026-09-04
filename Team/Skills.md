@@ -1,6 +1,7 @@
-## Group 11 Skills: ##
+## Group 11 Skills:
 
 1. Mahmoud Bastouni Skills
+
 - Angular
 - ASP.NET Core
 - TypeScript
@@ -16,7 +17,6 @@
 - MATLAB
 
 2. Deema Hafez Skills
-2. Deema Hafez
    - Java
    - Python
    - C++
@@ -42,3 +42,19 @@
    - Teamwork
    - Communication
    - Documentation
+
+3. Karim Hamdan Skills
+
+- Angular
+- ASP.NET Core
+- Assembly
+- TypeScript
+- Java
+- JavaScript
+- CSS
+- HTML
+- MySQL
+- C++
+- C#
+- Python
+- MATLAB
