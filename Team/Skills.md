@@ -58,3 +58,15 @@
 - C#
 - Python
 - MATLAB
+
+4. Khaled Al-Shurafa Skills
+
+- C++
+- Python
+- Java
+- SQL
+- Machine Learning
+- Data Mining
+- Data Structures and Algorithms
+- Git
+- GitHub

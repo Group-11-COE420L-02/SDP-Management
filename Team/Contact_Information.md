@@ -17,3 +17,9 @@
 - Phone Number: +971 056-650-7650
 - Email: hamdankarim2006@gmail.com
 - University Email: b00100281@aus.edu
+
+4. Khaled Al-Shurafa Contact Information
+
+- Phone Number: +971 509677294
+- Email: Khaledshurafa12@gmail.com
+- University Email: b00095465@aus.edu

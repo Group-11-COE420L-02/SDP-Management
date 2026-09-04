@@ -14,3 +14,8 @@
     - Student ID: @00100281
     - Major: Computer Science
     - Github Username: KarimHamdan22
+
+4.  - Name: Khaled Al-Shurafa
+    - Student ID: @00095465
+    - Major: Computer Science
+    - Github Username: KSH004
