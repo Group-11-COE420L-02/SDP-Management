@@ -1,6 +1,6 @@
 ## Software Project Stakeholders ##
 
-1. Stakeholder: Students
+1. Stakeholder: Students  
 Role: Use the website to communicate with professors, check their availability, and schedule meetings.
 Interest/Expectations: Want a simple and convenient way to communicate with professors and check their availability.
 Influence on the System: Their feedback at the end of the semester can help improve the website’s features and usability.
