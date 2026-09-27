@@ -123,3 +123,65 @@ Use Case Name: Review Confirmation History
 Primary Actor: Senior Design Coordinator  
 Short Description: The coordinator views previous team confirmation and rejection decisions, including their dates, reasons, and statuses.  
 Contributor: Karim  
+
+# Relationships #
+
+### R-01 ###
+Base Use Case: UC-01 — Search for an Advisor  
+Related Use Case: UC-02 — Schedule Advisor Meeting  
+Relationship: <<extend>>  
+Justification: After searching for an advisor, a student may optionally schedule a meeting with a professor. Scheduling a meeting is not required to complete the advisor search.  
+
+### R-02 ###
+Base Use Case: UC-11 — View Student Group Request  
+Related Use Case: UC-12 — Accept Student Group  
+Relationship: <<include>>  
+Justification: A professor must view the student group request before they can accept it.  
+
+### R-03 ###
+Base Use Case: UC-12 — Accept Student Group  
+Related Use Case: UC-13 — Check Team Capacity  
+Relationship: <<include>>  
+Justification: Accepting a student group requires the system to check that the professor has remaining team capacity.  
+
+### R-04 ###
+Base Use Case: UC-13 — Check Team Capacity  
+Related Use Case: UC-14 — View Assigned Teams  
+Relationship: <<extend>>  
+Justification: While checking their team capacity, the professor may choose to view their assigned teams for more details.  
+
+### R-05 ###
+Base Use Case: UC-16 — Review Team Registration  
+Related Use Case: UC-17 — Confirm Team Assignment  
+Relationship: <<include>>  
+Justification: The coordinator must review the registration before confirming it.  
+
+### R-06 ###
+Base Use Case: UC-16 — Review Team Registration  
+Related Use Case: UC-18 — Reject Team Assignment  
+Relationship: <<include>>  
+Justification: The coordinator must review a registration before rejecting it.  
+
+### R-07 ###
+Base Use Case: UC-18 — Reject Team Assignment  
+Related Use Case: UC-19 — Request Assignment Correction  
+Relationship: <<include>>  
+Justification: A rejection always requires requesting a correction, so the two actions are inseparable.  
+
+### R-08 ###
+Base Use Case: UC-07 — Send Message  
+Related Use Case: UC-08 — Receive Notifications  
+Relationship: <<include>>  
+Justification: Sending a message triggers a notification for the recipient to view.  
+
+### R-09 ###
+Base Use Case: UC-10 — View Upcoming Meetings  
+Related Use Case: UC-09 — Cancel or Reschedule Meeting  
+Relationship: <<extend>>  
+Justification: Cancelling or rescheduling a meeting requires viewing upcoming meetings first.  
+
+### R-10 ###
+Base Use Case: UC-12 — Accept Student Group  
+Related Use Case: UC-15 — Send Advisor Confirmation  
+Relationship: <<extend>>  
+Justification: When a professor accepts a student group, they may optionally send confirmation to the student group.  
