@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="TEfxQTFTFxVrt2Jm_cHJ">
+    <mxGraphModel dx="1972" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="140" width="160" x="320" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-2" parent="LVO_a6U8PN0cv6u1UzlJ-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- userID: int&lt;div&gt;- name: String&lt;/div&gt;&lt;div&gt;- email: String&lt;/div&gt;&lt;div&gt;- passwordHash: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-3" parent="LVO_a6U8PN0cv6u1UzlJ-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-4" parent="LVO_a6U8PN0cv6u1UzlJ-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ login(): boolean&lt;div&gt;+ logout(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="42" width="160" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Student" vertex="1">
+          <mxGeometry height="120" width="280" x="-30" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-6" parent="LVO_a6U8PN0cv6u1UzlJ-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- studentID: int" vertex="1">
+          <mxGeometry height="26" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-7" parent="LVO_a6U8PN0cv6u1UzlJ-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="280" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-8" parent="LVO_a6U8PN0cv6u1UzlJ-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ searchAdvisor(expertise: String) List&amp;lt;Professor&amp;gt;&lt;div&gt;+ viewAvailability(p: Professor): void&lt;/div&gt;&lt;div&gt;+ requestMeeting(m: Meeting): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="280" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Professor" vertex="1">
+          <mxGeometry height="150" width="260" x="540" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-10" parent="LVO_a6U8PN0cv6u1UzlJ-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- professorID: int&lt;div&gt;- expertise: String&lt;/div&gt;&lt;div&gt;- department: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-11" parent="LVO_a6U8PN0cv6u1UzlJ-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-12" parent="LVO_a6U8PN0cv6u1UzlJ-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ addAvailability(slot: AvailabilitySlot): void&lt;div&gt;+ removeAvailability(slotID: int): void&lt;/div&gt;&lt;div&gt;+ reviewMeetingRequest(m: Meeting): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="62" width="260" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-16" parent="1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="375" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-18" edge="1" parent="1" source="LVO_a6U8PN0cv6u1UzlJ-5" style="endArrow=none;html=1;rounded=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;edgeStyle=orthogonalEdgeStyle;exitX=0.625;exitY=0.013;exitDx=0;exitDy=0;exitPerimeter=0;curved=0;" target="LVO_a6U8PN0cv6u1UzlJ-16" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.038" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="300" />
+              <mxPoint x="400" y="300" />
+            </Array>
+            <mxPoint x="90" y="330" as="sourcePoint" />
+            <mxPoint x="400" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-19" edge="1" parent="1" source="LVO_a6U8PN0cv6u1UzlJ-9" style="endArrow=none;html=1;rounded=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;edgeStyle=orthogonalEdgeStyle;exitX=0.446;exitY=-0.023;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" target="LVO_a6U8PN0cv6u1UzlJ-16" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.596" as="geometry">
+            <Array as="points">
+              <mxPoint x="656" y="362" />
+              <mxPoint x="653.4" y="362" />
+              <mxPoint x="653.4" y="300" />
+              <mxPoint x="400" y="300" />
+            </Array>
+            <mxPoint x="690" y="358" as="sourcePoint" />
+            <mxPoint x="590" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-20" edge="1" parent="1" source="LVO_a6U8PN0cv6u1UzlJ-6" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=1.015;exitY=1.11;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" target="LVO_a6U8PN0cv6u1UzlJ-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="480" as="sourcePoint" />
+            <mxPoint x="450" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;contacts&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="370" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;0..*&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="240" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;0..*&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-24" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div&gt;Students can request meetings with&lt;/div&gt;&lt;div&gt;professors after viewing their availability.&lt;/div&gt;&lt;div&gt;Meeting details, scheduling, and status&lt;/div&gt;&lt;div&gt;are managed by the Meeting class,&lt;/div&gt;&lt;div&gt;which is defined separately in Deema&#39;s&lt;/div&gt;&lt;div&gt;UML Class Diagram.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="230" x="140" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="LVO_a6U8PN0cv6u1UzlJ-25" edge="1" parent="1" source="LVO_a6U8PN0cv6u1UzlJ-8" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;edgeStyle=orthogonalEdgeStyle;dashed=1;dashPattern=1 2;entryX=0;entryY=0;entryDx=102.5;entryDy=0;entryPerimeter=0;exitX=0.455;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" target="LVO_a6U8PN0cv6u1UzlJ-24" value="">
+          <mxGeometry relative="1" width="160" x="-0.3663" as="geometry">
+            <mxPoint x="100" y="490" as="sourcePoint" />
+            <mxPoint x="190" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

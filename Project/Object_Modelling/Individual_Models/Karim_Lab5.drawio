@@ -1,0 +1,141 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="karim-individual" name="Karim Individual UML">
+    <mxGraphModel dx="1852" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="swimlane;html=1;startSize=26;horizontal=1;collapsible=1;rounded=0;shadow=0;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" value="User" vertex="1">
+          <mxGeometry height="135" width="220" x="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_attrs" parent="user" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="- userID: int&#xa;- name: String&#xa;- email: String&#xa;- passwordHash: String" vertex="1">
+          <mxGeometry height="68" width="220" y="22" as="geometry" />
+        </mxCell>
+        <mxCell id="user_divider" parent="user" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="220" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="user_ops" parent="user" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="+ login(): boolean&#xa;+ logout(): void" vertex="1">
+          <mxGeometry height="40" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="coord" parent="1" style="swimlane;html=1;startSize=26;horizontal=1;collapsible=1;rounded=0;shadow=0;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" value="SeniorDesignCoordinator" vertex="1">
+          <mxGeometry height="135" width="320" x="120" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="coord_attrs" parent="coord" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="- coordinatorID: int" vertex="1">
+          <mxGeometry height="26" width="320" y="22" as="geometry" />
+        </mxCell>
+        <mxCell id="coord_divider" parent="coord" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="320" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="coord_ops" parent="coord" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="+ reviewAssignment(id: int): AdvisorAssignment&#xa;+ confirmAssignment(id: int): void&#xa;+ rejectAssignment(id: int, reason: String): void&#xa;+ requestCorrection(id: int, reason: String): void&#xa;+ viewHistory(teamID: int): List&lt;AssignmentReview&gt;" vertex="1">
+          <mxGeometry height="82" width="320" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="team" parent="1" style="swimlane;html=1;startSize=26;horizontal=1;collapsible=1;rounded=0;shadow=0;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" value="SeniorDesignTeam" vertex="1">
+          <mxGeometry height="170" width="280" x="540" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="team_attrs" parent="team" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="- teamID: int&#xa;- teamName: String&#xa;- projectTitle: String&#xa;- projectIdea: String&#xa;- members: List&lt;Student&gt;&#xa;- confirmationStatus: TeamStatus" vertex="1">
+          <mxGeometry height="96" width="280" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="team_divider" parent="team" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="280" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="team_ops" parent="team" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="+ getMembers(): List&lt;Student&gt;&#xa;+ setConfirmationStatus(status: TeamStatus): void" vertex="1">
+          <mxGeometry height="40" width="300" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="assignment" parent="1" style="swimlane;html=1;startSize=26;horizontal=1;collapsible=1;rounded=0;shadow=0;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" value="AdvisorAssignment" vertex="1">
+          <mxGeometry height="107" width="270" x="545" y="380" as="geometry">
+            <mxRectangle height="30" width="140" x="680" y="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assignment_attrs" parent="assignment" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="- assignmentID: int&#xa;- assignedAt: DateTime&#xa;- advisor: Professor" vertex="1">
+          <mxGeometry height="54" width="270" y="21" as="geometry" />
+        </mxCell>
+        <mxCell id="assignment_divider" parent="assignment" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="270" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="assignment_ops" parent="assignment" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="+ getAdvisor(): Professor" vertex="1">
+          <mxGeometry height="26" width="420" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="swimlane;html=1;startSize=26;horizontal=1;collapsible=1;rounded=0;shadow=0;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" value="AssignmentReview" vertex="1">
+          <mxGeometry height="121" width="360" x="100" y="527" as="geometry" />
+        </mxCell>
+        <mxCell id="review_attrs" parent="review" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="- reviewID: int&#xa;- decision: ReviewDecision&#xa;- reason: String&#xa;- reviewedAt: DateTime" vertex="1">
+          <mxGeometry height="68" width="440" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="review_divider" parent="review" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="360" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="review_ops" parent="review" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;spacingLeft=6;spacingTop=5;fontStyle=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="+ recordDecision(decision: ReviewDecision, reason: String): void" vertex="1">
+          <mxGeometry height="26" width="360" y="89" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit" edge="1" parent="1" source="coord" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=block;endFill=0;endSize=20;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="user" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="records" edge="1" parent="1" source="coord" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="review" value="records">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="records_start" connectable="0" parent="records" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" y="-12" as="geometry">
+            <mxPoint x="2" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="records_end" connectable="0" parent="records" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" y="-12" as="geometry">
+            <mxPoint x="2" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assignments" edge="1" parent="1" source="team" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="assignment" value="has assignments">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assignments_start" connectable="0" parent="assignments" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" y="-12" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assignments_end" connectable="0" parent="assignments" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" y="-12" as="geometry">
+            <mxPoint x="1" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="history" edge="1" parent="1" source="assignment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="review" value="has review history">
+          <mxGeometry relative="1" x="-0.1645" y="-10" as="geometry">
+            <mxPoint y="-1" as="offset" />
+            <Array as="points">
+              <mxPoint x="680" y="587.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="history_start" connectable="0" parent="history" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" y="-12" as="geometry">
+            <mxPoint x="22" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="history_end" connectable="0" parent="history" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" y="-12" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rules" parent="1" style="shape=note;whiteSpace=wrap;html=0;size=24;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" value="TeamStatus: Pending, Confirmed, Rejected.&#xa;ReviewDecision: Confirmed, Rejected, CorrectionRequested.&#xa;Each student belongs to at most one team.&#xa;Only one advisor assignment is current per team.&#xa;A professor supervises at most four active teams." vertex="1">
+          <mxGeometry height="100" width="340" x="330" y="688" as="geometry" />
+        </mxCell>
+        <mxCell id="rules_link" edge="1" parent="1" source="review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;dashPattern=1 4;endArrow=none;strokeColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="rules" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LbKKDWMonOkNMX32Fu3e-2" edge="1" parent="1" source="assignment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;dashPattern=1 4;endArrow=none;strokeColor=#000000;entryX=0.5;entryY=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="shared" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="815" y="433" as="sourcePoint" />
+            <mxPoint x="1200" y="664.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shared" parent="1" style="shape=note;whiteSpace=wrap;html=0;size=24;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" value="User is reused from Mahmoud&#39;s diagram.&#xa;Student and Professor are defined in his model.&#xa;Notification is defined in Deema&#39;s model and&#xa;is used for confirmation and rejection notices." vertex="1">
+          <mxGeometry height="90" width="310" x="840" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
